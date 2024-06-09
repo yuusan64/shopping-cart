@@ -5,6 +5,7 @@ import MenClothing from './components/MenClothing';
 import WomenClothing from './components/WomenClothing';
 import Cart from './components/Cart';
 import Layout from './components/Layout';
+import Footer from './components/Footer';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -44,6 +45,7 @@ function App() {
           <Route path="cart" element={<Cart cartItems={cartItems} updateCartQuantity={updateCartQuantity} removeFromCart={removeFromCart} />} />
         </Route>
       </Routes>
+      <Footer />
     </Router>
   );
 }
