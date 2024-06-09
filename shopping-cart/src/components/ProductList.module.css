@@ -1,10 +1,10 @@
-.title {
+/* .title {
   text-align: center;
   margin: 20px 0;
   color: #333;
   font-size: 2rem;
   font-weight: 500;
-}
+} */
 
 .productList {
   display: flex;
@@ -66,7 +66,7 @@
 }
 
 .addToCartButton {
-  background-color: #28a745;
+  background-color: black;
   border: none;
   color: white;
   padding: 10px;
@@ -77,5 +77,5 @@
 }
 
 .addToCartButton:hover {
-  background-color: #218838;
+  background-color: #2b5d28;
 }

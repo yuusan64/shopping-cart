@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #007bff;
+  background-color: black;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -13,24 +13,65 @@
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  text-decoration: none; /* Ensures no underline */
 }
 
 .navLink:hover {
-  background-color: #0056b3;
+  background-color: #565f68;
+}
+h1{
+  margin: 0;
+}
+
+.title {
+  display: flex;
+  font-size: 2rem;
+  gap: 20px;
+  justify-content: center;
+  font-weight: bold;
+  color: #2E2E2E;
+  /* margin: 20px 0; */
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right, #ffffff, #dddddd);
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: 20px;
+}
+
+
+.cartContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .cart {
-  width: 24px;
-  height: 24px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .metric {
-  color: white;
+  color: whitesmoke;
+  font-size: 0.8rem;
+  text-align: center;
   background-color: red;
+  height: 1.1rem;
+  width: 1.1rem;
   border-radius: 50%;
-  padding: 5px 10px;
   position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 14px;
+  top: 0rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  height: 5rem;
+  /* height: 3.5rem; */
+  /* width: 4.2rem; */
+  padding: 0rem;
+  transform: translate(10px, -14px);
 }

@@ -29,10 +29,9 @@ function Home({ addToCart }) {
 
   return (
     <div>
-      <h1 className={styles.title}>Clothing Store</h1>
       <div className={styles.productList}>
-        {products.map(product => (
-          <div key={product.id} className={styles.productItem}>
+        {products.map((product, index) => (
+          <div key={`${product.id}-${index}`} className={styles.productItem}>
             <h2 className={styles.productTitle}>{product.title}</h2>
             <p className={styles.productPrice}>${product.price}</p>
             <img className={styles.productImage} src={product.thumbnail} alt={product.title} />
@@ -52,6 +51,7 @@ function Home({ addToCart }) {
           </div>
         ))}
       </div>
+      <div></div>
     </div>
   );
 }
