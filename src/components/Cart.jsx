@@ -9,10 +9,10 @@ export default function Cart({ cartItems, updateCartQuantity, removeFromCart }) 
 
   return (
     <div>
-      <h1>Cart</h1>
+      <h1 className={styles.title}>Cart</h1>
       <div>
         {cartItems.length === 0 ? (
-          <p>Your cart is empty</p>
+          <p className={styles.emptyMessage}>Your cart is empty :(</p>
         ) : (
           <div>
             <ul className={styles.cartList}>

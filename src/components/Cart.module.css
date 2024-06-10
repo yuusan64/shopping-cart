@@ -63,3 +63,14 @@
     font-weight: 500;
   }
   
+  .emptyMessage{
+    text-align: center;
+    top: 50%;
+    font-size: 2em;
+    font-weight: 600;
+    transform: translate(0, 5em);
+  }
+
+  .title{
+    padding: 1em 1em 0em;
+  }
